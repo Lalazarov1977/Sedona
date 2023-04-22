@@ -1,12 +1,182 @@
 <!DOCTYPE html>
-<html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Седона</title>
-  </head>
-  <body>
+<html class="page" lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Седона</title>   
+    <link rel="stylesheet" href="source/css/normalize.css"> 
+    <link rel="stylesheet" href="source/css/style.css">
+</head>
+<body class="page__body">
+    <!-- Header start -->
+    <header class="page-header">
+        <div class="wrapper">
+            <div class="page-header__wrapper">
+                <div class="page-header__logo">
+                    <a class="page-header__logo-link">
+                       <img src="./source/img/logo-sedona-mobile.svg" width="102" height="84" alt="Логотип Седона">
+                    </a>
+                </div>
+            <nav class="main-nav">
+                <!-- <button class="main-nav__toggle" type="button">
+                    <span class="visually-hidden">Открыть меню</span>                             
+                </button> -->
+            <ul class="main-nav__list site-list">
+                  <li class="site-list__item">
+                    <a>главная</a>
+                  </li>
+                  <li class="site-list__item">
+                    <a href="photo.html">фото и видео</a>
+                  </li>
+                  <li class="site-list__item">
+                      <a href="form.html">форма отзыва</a>
+                  </li>
+                  <li class="site-list__item">
+                      <a href="#">HTML Academy</a>
+                  </li>
+            </ul>   
+                <div class="main-nav_close">
+                  <span class="main-nav_close-line"></span>
+                  <span class="main-nav_close-line"></span>
+                </div>            
+            </nav>
+                <div class="main-nav_burger burger">
+                    <span class="burger_line burger_line_first"></span>
+                    <span class="burger_line burger_line_second"></span>
+                    <span class="burger_line burger_line_third"></span>
+                </div>
+            </div>
+        </div> 
+    </header>
+    <!-- Header end -->
+    <main class="page-main">
+           <h1 class="visually-hidden">Седона - небольшой городок в Аризоне</h1>
+    <!-- Intro start -->    
+           <section class="intro">
+            <div>
+                <img class="page-main__intro-advantages" src="./source/img/text-sedona-index.svg" alt="Добро пожаловать в Седону">
+            </div>
+                <img src="./source/img/bg-intro-triangle-mobile.svg" alt="">
+            <div class="intro-title">
+                <img src="./source/img/bg-intro-triangle-mobile.svg" alt="">
+                <h2>Седона — небольшой городок в аризоне, заслуживающий большего!</h2>
+            </div>
+            <div>
+                <h3 class="intro-subtitle">Рассмотрим 5 причин, по которым седона круче, чем гранд каньон!</h3>
+            </div>
+        </section>
+    <!-- Intro end -->  
 
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">HTML и CSS, уровень 2</a>».</p>
+        <section class="compare_cards">
+            <div class="compare_cards-city">
+                <img src="./source/img/bg-triangle.svg" alt="">
+                <h2 class="compare_cards-item">Настоящий городок</h2>
+                <h3 class="compare_cards-number" >— №1 —</h3>
+                <h3 class="compare_cards-causes" >Седона не аттракцион для туристов, там течет своя жизнь</h3>
+            </div>
+            <div class="image">
+                <img class="image-city" src="./source/img/main-city-mobile@1x.jpg" alt="Город">
+            </div>        
+        </section>     
+        <section class="info_cards">
+            <div class="info_cards-icon">
+                <img class="info_cards-house" src="./source/img/icon-house.svg" alt="иконка дом">
+            </div>
+            <div>
+                <h2 class="info_cards-title">Жилье</h2>
+            </div>
+            <div>
+                <h2 class="info_cards-subtitle">Рекомендуем пожить в настоящем мотеле, все как в кино!</h2>
+            </div>
+        </section> 
+        <section class="info_cards">
+            <div class="info_cards-icon">
+                <img class="info_cards-gift" src="./source/img/icon-gift.svg" alt="иконка дом">
+            </div>
+            <div>
+                <h2 class="info_cards-title">Сувениры</h2>
+            </div>
+            <div>
+                <h2 class="info_cards-subtitle">Не только китайского, но и местного производства!</h2>
+            </div>
+        </section>
+        <section class="info_cards">
+            <div class="info_cards-icon">
+                <img class="info_cards-food" src="./source/img/icon-burger.svg" alt="иконка дом">          
+            </div>
+            <div>
+                <h2 class="info_cards-title">Еда</h2>
+            </div>
+            <div>
+                <h2 class="info_cards-subtitle">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</h2>
+            </div>
+        </section>
+        <section class="compare_cards">
+            <div class="compare_cards-bridge">
+                <h2 class="compare_cards-item">Там есть мост дьявола</h2>
+                <h3 class="compare_cards-number">— №2 —</h3>
+                <h3 class="compare_cards-causes">Да, по нему можно пройти! Если вы осмелитесь, конечно</h3>
+            </div>
+            <div class="image">
+                <img class="image-city" src="./source/img/main-bridge-mobile@1x.jpg" alt="Мост">
+            </div>        
+        </section>
+        <section class="compare_cards">
+            <div class="compare_cards-square">
+                <h2 class="compare_cards-item">Небольшая площадь</h2>
+                <h3 class="compare_cards-number">— №3 —</h3>
+                <h3 class="compare_cards-causes">Все интересные места находятся очень близко</h3>
+            </div>             
+        </section>
+            <span class="layer"></span>
+        <section class="compare_cards">
+            <div class="compare_cards-road">
+                <h2 class="compare_cards-item">Красивая дорога</h2>
+                <h3 class="compare_cards-number">— №4 —</h3>
+                <h3 class="compare_cards-causes">Ехать в седону из лас-вегаса совсем не скучно!</h3>
+            </div>            
+        </section>
+            <span class="layer"></span>  
+        <section class="compare_cards">
+            <div class="compare_cards-turists">
+                <h2 class="compare_cards-item">Мало туристов</h2>
+                <h3 class="compare_cards-number">— №5 —</h3>
+                <h3 class="compare_cards-causes">Большинство едет в гранд каньон и толпится там</h3>
+            </div>           
+        </section>
+        <section class="search">
+            <div class="search_cards">
+               <h2 class="search_cards-item">Заинтересовались?</h2>            
+               <h3 class="search_cards-choice">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</h3>
+               <button type="submit" class="search_button">Найти гостиницу</button>
+            </div>
+        </section>
+            <div class="map_mobile">
+                <img src="./source/img/bg-map-mobile@1x.jpg" width="320" height="350" alt="Карта Седоны">
+                <img class="map_mobile-marker" src="./source/img/icon-map-marker.svg" alt="">
+            </div>
+    </main>
 
+    <!-- Footer start -->
+    <footer class="footer">
+        <div class="footer_visit">
+            <h2 class="footer_visit-title">#visitsedona</h2>
+        </div>
+        <div class="">
+            <ul class="footer_social">
+               <li><a class="social-button" href="#"><span class="visually-hidden">Твиттер</span></a></li>
+               <li><a class="social-button" href="#"><span class="visually-hidden">Фейсбук</span></a></li>
+               <li><a class="social-button" href="#"><span class="visually-hidden">Ютуб</span></a></li>
+            </ul>
+        </div>
+        <div class="footer_copyright">
+           <b>Разработано</b>
+           <img class="footer-logo" src="./source/img/htmlacademy.svg" width="27" height="34" alt="HTML Academy">
+        </div>
+    </footer>
+    <!-- Footer end -->
+
+    <script src="./source/js/script.js"></script>
   </body>
 </html>
