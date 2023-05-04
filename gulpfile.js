@@ -1,7 +1,7 @@
 const gulp = require("gulp");
 const plumber = require("gulp-plumber");
 const sourcemap = require("gulp-sourcemaps");
-const less = require("gulp-less");
+const sass = require('gulp-sass')(require('sass'));
 const postcss = require("gulp-postcss");
 const autoprefixer = require("autoprefixer");
 const sync = require("browser-sync").create();
@@ -9,10 +9,10 @@ const sync = require("browser-sync").create();
 // Styles
 
 const styles = () => {
-  return gulp.src("source/less/style.less")
+  return gulp.src("source/sass/style.scss")
     .pipe(plumber())
     .pipe(sourcemap.init())
-    .pipe(less())
+    .pipe(sass())
     .pipe(postcss([
       autoprefixer()
     ]))
@@ -42,8 +42,8 @@ exports.server = server;
 // Watcher
 
 const watcher = () => {
-  gulp.watch("source/less/**/*.less", gulp.series("styles"));
-  gulp.watch("source/*.html").on("change", sync.reload);
+  gulp.watch("source/css/**/*.{scss,sass,css}", gulp.series("styles"));
+  gulp.watch("/*.html").on("change", sync.reload);
 }
 
 exports.default = gulp.series(
