@@ -3,15 +3,9 @@
 // @import "template";
 
 .page__body {
-
 	font-family: PT Sans, Arial, sans-serif;
-	// margin: 0 auto;
-	// max-width: 100%;
-	// height: auto;
-	
-	// display: flex;
-	// flex-wrap: wrap;
-	// justify-content: center;
+	max-width: 1200px;
+	margin: 0 auto;	
 }
 
 img {
@@ -25,7 +19,6 @@ img {
 
 .wrapper {
 	max-width: 1200px;
-	margin: 0 auto;
 }
 
 .wrapper-full{
@@ -54,6 +47,7 @@ img {
 .header_active {
 	background: #81B3D2;
 	height: 96px;
+	max-width: 1200px;
 }
 
 a {
@@ -152,7 +146,6 @@ a {
 	grid-template-columns: repeat(3, 1fr);
 	column-gap: 0;
 	width: 1200px;
-	height: 800px;
 	margin: 0 auto;
 
 	&_image {
@@ -172,55 +165,73 @@ a {
 		padding: 50px;
 	}
 	&_cards {
+		display: flex;
+    	flex-direction: column;
+    	justify-content: center;
 		height: 256px;
 		text-align: center;
 		position: relative;
 		overflow: hidden;
 		grid-column: span 1;
 		&-city {
-			justify-content: center;
-			align-items: center;
+			display: flex;
 			position: relative;
 			overflow: hidden;
-			grid-column: span 1;
 			height: 256px;
 			text-align: center;
-			// padding: 0px 12px 40px 12px;
+			justify-content: center;
+			align-items: center;
+			flex-direction: column;
 			background: #81B3D2;
 			color: #ffffff;
 		}
 		&-bridge {
+			display: flex;
 			position: relative;
 			overflow: hidden;
-			grid-column: span 1;
 			height: 256px;
 			text-align: center;
-			// padding: 0px 12px 40px 12px;
+			justify-content: center;
+    		align-items: center;
+    		flex-direction: column;
 			background: #81B3D2;
 			color: #ffffff;
 		}
-		&-square {		
+		&-square {
+			display: flex;
+			position: relative;
+			overflow: hidden;	
 			text-align: center;
-			// padding: 0px 12px 40px 12px;
 			height: 256px;
+			justify-content: center;
+    		align-items: center;
+    		flex-direction: column;
 			background: #EEEEEE;
 		}
 		&-road {
+			display: flex;
+			position: relative;
+			overflow: hidden;	
 			text-align: center;
-			// padding: 0px 12px 40px 12px;
 			height: 256px;
-			background: #81B3D2;
+			justify-content: center;
+    		align-items: center;
+    		flex-direction: column;
 			background: #EEEEEE;
 		}
 		&-turists {
+			display: flex;
+			position: relative;
+			overflow: hidden;	
 			text-align: center;
-			// padding: 0px 12px 40px 12px;
 			height: 256px;
+			justify-content: center;
+    		align-items: center;
+    		flex-direction: column;
 			background: #EEEEEE;
 		}
 		&-item {
 			display: flex;
-			padding-top: 30px;
 			font-weight: 700;
 			font-size: 18px;
 			line-height: 26px;
@@ -228,7 +239,7 @@ a {
 			text-align: center;
 			text-transform: uppercase;
 			justify-content: center;
-			// margin: 0 auto;
+			margin: 0 auto;
 		}
 		&-number {
 			display: flex;
@@ -239,11 +250,11 @@ a {
 			text-align: center;
 			text-transform: uppercase;
 			justify-content: center;
-			// margin: 0 auto;
+			margin: 0 auto;
 		}
 		&-causes {
 			display: flex;
-			width: 152px;
+			width: 300px;
 			font-weight: 400;
 			font-size: 14px;
 			line-height: 21px;
@@ -258,9 +269,6 @@ a {
 
 .info_cards {
 
-	// grid-column: span 1;
-	// position: relative;
-	// height: 256px;
 	&-icon {
 		display: flex;
 		justify-content: center;
@@ -283,7 +291,6 @@ a {
 }
 	
 	
-	
 .layer {
 		display: none;
 		position: absolute;
@@ -291,16 +298,69 @@ a {
 		height: 1px;
 		left: 20px;
 		background: #D6D6D6;
-	}
+}
 
 
 .search {
 		height: 287px;
-		margin: 0 auto;
+		margin-top: 57px;
 		display: flex;
 		flex-wrap: wrap;
 		justify-content: center;
 		text-align: center;
+		align-items: center;
+		flex-direction: column;
+
+		&_cards {
+			display: flex;
+			flex-direction: column;
+			// margin: 0 auto;
+			justify-content: center;
+			align-items: center;
+			text-align: center;
+			text-transform: uppercase;
+			
+			&-item {
+				margin: 0 auto;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				flex-direction: column;
+				font-weight: 700;
+				font-size: 30px;
+				line-height: 26px;
+			}
+			&-choice {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				flex-direction: column;
+				font-weight: 400;
+				font-size: 14px;
+				line-height: 24px;	
+				color: #333333;	
+				padding: 42px;
+			}
+		}	
+		&_button {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				flex-direction: column;
+				width: 458px;
+				height: 58px;
+				left: 20px;
+				font-weight: 700;
+				font-size: 21px;
+				line-height: 26px;
+				text-align: center;
+				text-transform: uppercase;
+				color: #ffffff;
+				background: #81B3D2;
+				border: 0;
+				margin-bottom: 66px;
+		}
+		
 }
 // .main-nav {
 // 	font-weight: 700;
