@@ -31,6 +31,7 @@ ul {
 }
 
 .page-header {
+	max-width: 1200px;
 	position: fixed;
 	top: 0;
 	width: 100%;
@@ -52,6 +53,10 @@ ul {
 	background: #81B3D2;
 	height: 85px;
 	max-width: 1200px;
+}
+
+.header_active a {
+	color: #EEEEEE
 }
 
 a {
