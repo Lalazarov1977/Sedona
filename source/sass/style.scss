@@ -46,7 +46,6 @@ ul {
 	&__logo-link-1 {
 		display: flex;
 		justify-content: center;
-		// height: 84px;
 		position: absolute;
 	}
 	&__logo-link-2 {
@@ -106,12 +105,6 @@ a {
 	}
 	&_close {
 		display: none;
-		// width: 40px;
-		// height: 40px;
-		// position: absolute;
-		// top: 20px;
-		// right: 20px;
-		// z-index: 11;
 	}
 }
 .burger_line {
@@ -560,13 +553,8 @@ input[type="radio"].visually-hidden {
 	&__wrapper {
 		flex-direction: column;
 	}
-	// &__logo-link-1 {
-	// 	display: none;
-	// }
 	&__logo-link-2 {
-	// 	position: absolute;
 		top: 220px;
-	// 	// background-image: url(/../img/logo-sedona-mobile.svg);
 	}
 }
 	
@@ -607,13 +595,11 @@ input[type="radio"].visually-hidden {
 		margin: 0 auto;
 		display: flex;
 		width: 285px;
-		// height: 162px;
 		margin-top: 32px;
 	}
 	&-subtitle {
 		margin: 0 auto;
 		width: 285px;
-		// height: 162px;
 		margin-bottom: 11px;
 	}	
 	&-triangle-2 {
@@ -695,7 +681,6 @@ input[type="radio"].visually-hidden {
 
 .main-nav {
 	width: 100%;
-    // height: 100%;
     position: fixed;
     top: 0;
     left: 0;
@@ -739,7 +724,6 @@ input[type="radio"].visually-hidden {
 		width: 100%;
 		height: 4px;
 		background-color: #FFF;
-		// position: absolute;
 		top: 50%;
 		&:first-child {
 			transform: translateY(-50%) rotate(45deg);
@@ -749,10 +733,6 @@ input[type="radio"].visually-hidden {
 		}
 	}
 }
-
-// .main-nav_active .page-main {
-// 	margin-top: 220px;
-// }
 
 .site-list__item {
 	width: 100%;
