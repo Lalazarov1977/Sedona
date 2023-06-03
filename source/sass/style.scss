@@ -164,7 +164,7 @@ a {
 	margin: 0 auto;
 	position: relative;
 	vertical-align: bottom;
-	background: url(../img/bg-back-desktop@1x.jpg);
+	background-image: url(../img/bg-back-desktop@1x.jpg);
 	padding-top: 60px;
 	background-size: initial;
 	background-position: top center;
@@ -175,6 +175,9 @@ a {
 		width: 1200px;
 		height: 57px;
 		padding-top: 51px;
+	}
+	&-triangle-mobile {
+		display: none;
 	}
 	&-triangle-2 {
 		display: none;
@@ -194,6 +197,7 @@ a {
 	}
 	&-subtitle {
 		margin: 0 auto;
+		display: flex;
 		width: 484px;
 		height: 110px;
 		font-weight: 400;
@@ -563,11 +567,11 @@ input[type="radio"].visually-hidden {
 	&__intro-advantages {
 		margin: 0 auto;
 		display: flex;
-		width: 382px;
+		width: 282px;
 		height: 214px;
 		justify-content: center;
 		padding-top: 90px;
-		padding-bottom: 85px;
+		padding-bottom: 28px;
 	}
 }
 
@@ -580,30 +584,37 @@ input[type="radio"].visually-hidden {
 }
 
 .intro {
+	background-image: url(../img/bg-back-mobile@1x.jpg);
+	background-repeat: no-repeat;
 	padding-top: 0px;
 	width: 320px;
-	height: 389px;
+	height: 100%;
+	
 	&-triangle-1 {
 		display: none;
 	}
 	&-triangle-mobile {
-		background: url(../img/bg-intro-triangle-mobile.svg);
+		display: block;
 		background-repeat: no-repeat;
-		margin-top: 103px;
-	}	
+		margin-top: 31px;
+	}
 	&-title {
 		margin: 0 auto;
 		display: flex;
 		width: 285px;
-		margin-top: 32px;
+		margin-top: 31px;
 	}
 	&-subtitle {
 		margin: 0 auto;
 		width: 285px;
-		margin-bottom: 11px;
+		height: 100%;
+		// margin-bottom: 11px;
 	}	
 	&-triangle-2 {
 		display: block;
+		position: absolute;
+		z-index: 10;
+		// margin-top: 35px;
 	}
 }
 
@@ -621,7 +632,7 @@ input[type="radio"].visually-hidden {
 		height: 260px;
 	}
 	&_cards {
-		height: 167px;
+		height: 100%;
 
 		&-city {
 			height: 211px;
@@ -643,7 +654,7 @@ input[type="radio"].visually-hidden {
 .search {
 	width: 320px;
 	height: 287px;
-	margin-top: 33px;
+	// margin-top: 33px;
 		
 	&-choice {
 		padding: 27px;
