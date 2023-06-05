@@ -338,7 +338,7 @@ a {
   justify-content: center;
   align-items: center;
 }
-.info_cards-icon :hover {
+.info_cards-icon:hover {
   transform: scale(1.5);
 }
 .info_cards-title {
