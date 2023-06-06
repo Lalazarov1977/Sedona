@@ -142,6 +142,7 @@ a {
 }
 
 .page-main {
+  max-width: 1200px;
   margin-top: 70px;
 }
 .page-main__intro-advantages {
@@ -165,9 +166,8 @@ a {
   height: 679px;
 }
 .intro-triangle-1 {
-  width: 1200px;
   height: 57px;
-  padding-top: 51px;
+  padding-top: 52px;
 }
 .intro-triangle-mobile {
   display: none;
@@ -510,6 +510,9 @@ input[type=radio].visually-hidden {
 }
 
 @media screen and (max-width: 769px) {
+  .page__body {
+    width: 769px;
+  }
   .page-header__logo-link-1 {
     display: none;
   }
@@ -519,7 +522,14 @@ input[type=radio].visually-hidden {
     height: 84px;
   }
 }
+.page-main {
+  max-width: 769px;
+}
+
 @media screen and (max-width: 321px) {
+  .page__body {
+    width: 320px;
+  }
   .page-header {
     max-width: 320px;
     position: fixed;
@@ -531,6 +541,9 @@ input[type=radio].visually-hidden {
   }
   .page-header__logo-link-2 {
     top: 220px;
+  }
+  .page-main {
+    max-width: 320px;
   }
   .page-main__intro-advantages {
     margin: 0 auto;
