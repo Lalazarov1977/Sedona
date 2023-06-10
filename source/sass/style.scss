@@ -31,12 +31,10 @@ ul {
 }
 
 .wrapper-full{
-	// max-width: 1280px;
 	margin: 0 auto;
 }
 
 .page-header {
-	// width: 1200px;
 	position: fixed;
 	top: 0;
 	width: 100%;
@@ -536,10 +534,6 @@ input[type="radio"].visually-hidden {
 }
 
 @media screen and (max-width: 769px) {
-
-.page__body {
-	// max-width: 100%;
-}
 
 .page-header {
 	width: 100%;
