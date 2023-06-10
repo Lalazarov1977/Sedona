@@ -2,9 +2,14 @@
 // @import "footer.scss";
 // @import "template";
 
+.page {
+	width: 1200px;
+	margin: 0 auto;
+}
+
 .page__body {
 	font-family: PT Sans, Arial, sans-serif;
-	max-width: 1200px;
+	width: 1200px;
 	margin: 0 auto;	
 }
 
@@ -26,12 +31,12 @@ ul {
 }
 
 .wrapper-full{
-	max-width: 1280px;
+	// max-width: 1280px;
 	margin: 0 auto;
 }
 
 .page-header {
-	max-width: 1200px;
+	// width: 1200px;
 	position: fixed;
 	top: 0;
 	width: 100%;
@@ -513,9 +518,6 @@ a {
 	color: #ffffff;
 	background-color: #81B3D2;
 	margin: 3px;
-
-	&:hover {
-	}
 }
 
 .visually-hidden:not(:focus):not(:active),
@@ -536,10 +538,12 @@ input[type="radio"].visually-hidden {
 @media screen and (max-width: 769px) {
 
 .page__body {
-	width: 769px;
+	// max-width: 100%;
 }
 
 .page-header {
+	width: 100%;
+
 	&__logo-link-1 {
 		display: none;
 	}
@@ -549,20 +553,33 @@ input[type="radio"].visually-hidden {
 		height: 84px;
 	}
 }
-}
 
 .page-main {
-	max-width: 769px;
+	width: 100%;
+
+	&__intro-advantages {
+		width: 100%;
+	}
 }
+
+.wrapper {
+	width: 100%;
+}
+}
+
 
 @media screen and (max-width: 321px) {
 
+	.page {
+		width: 320px;
+	}
+
 .page__body {
-	width: 320px;
+	max-width: 320px;
 }
 		
 .page-header {
-	max-width: 320px;
+	width: 100%;
 	position: fixed;
 	top: 0;
 	width: 100%;
@@ -576,7 +593,7 @@ input[type="radio"].visually-hidden {
 }
 	
 .page-main {
-	max-width: 320px;
+	width: 320px;
 
 	&__intro-advantages {
 		margin: 0 auto;
@@ -594,14 +611,14 @@ input[type="radio"].visually-hidden {
 }
 
 .wrapper {
-	max-width: 320px;
+	width: 100%;
 }
 
 .intro {
 	background-image: url(../img/bg-back-mobile@1x.jpg);
 	background-repeat: no-repeat;
 	padding-top: 0px;
-	width: 320px;
+	width: 100%;
 	height: 100%;
 	
 	&-triangle-1 {
@@ -637,7 +654,7 @@ input[type="radio"].visually-hidden {
 
 .compare {
 	grid-template-columns: repeat(1, 1fr);
-	width: 320px;
+	width: 100%;
 
 	&_image {
 		grid-column: span 1;
@@ -669,7 +686,7 @@ input[type="radio"].visually-hidden {
 }
 
 .search {
-	width: 320px;
+	width: 100%;
 	height: 287px;
 		
 	&-choice {
@@ -695,13 +712,13 @@ input[type="radio"].visually-hidden {
 }
 
 .map {
-    width: 320px;
+    width: 100%;
     height: 350px;
     overflow: hidden;
 }
 
 .footer {
-    width: 320px;
+    width: 100%;
     height: 233px;
 	flex-direction: column;
 }
@@ -726,7 +743,7 @@ input[type="radio"].visually-hidden {
 		position: relative;
 		flex-direction: column;
 		align-items: center;
-		width: 320px;
+		width: 100%;
 		height: 220px;
 		margin: 0 auto;
 		padding: 0;
@@ -788,7 +805,7 @@ input[type="radio"].visually-hidden {
 .header_active {
 	position: fixed;
 	background: #81B3D2;
-	width: 320px;
+	width: 100%;
 	height: 70px;
 }
 }
