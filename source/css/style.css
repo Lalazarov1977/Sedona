@@ -97,11 +97,11 @@ a {
 }
 .main-nav__list {
   display: flex;
-  padding: 10px;
+  padding: 10px 0;
   position: absolute;
   justify-content: space-around;
   align-items: center;
-  max-width: 1180px;
+  max-width: 1200px;
   width: 100%;
 }
 .main-nav_close {
@@ -492,9 +492,13 @@ a {
   justify-content: center;
   width: 46px;
   height: 48px;
-  color: #ffffff;
   background-color: #81B3D2;
   margin: 3px;
+  fill: #ffffff;
+}
+
+.social-button:hover {
+  fill: #000000;
 }
 
 .visually-hidden:not(:focus):not(:active),
