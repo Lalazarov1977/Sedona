@@ -1,5 +1,4 @@
 .page {
-  width: 1200px;
   margin: 0 auto;
 }
 
@@ -23,10 +22,6 @@ ul {
           padding-inline-start: 0px;
 }
 
-.wrapper {
-  max-width: 1200px;
-}
-
 .wrapper-full {
   margin: 0 auto;
 }
@@ -34,7 +29,7 @@ ul {
 .page-header {
   position: fixed;
   top: 0;
-  width: 100%;
+  width: 1200px;
   transition: 0.5s linear;
   z-index: 999;
 }
@@ -56,7 +51,6 @@ ul {
 .header_active {
   background: #81B3D2;
   height: 87px;
-  max-width: 1200px;
 }
 
 .header_active a {
@@ -101,8 +95,7 @@ a {
   position: absolute;
   justify-content: space-around;
   align-items: center;
-  max-width: 1200px;
-  width: 100%;
+  width: 1200px;
 }
 .main-nav_close {
   display: none;
@@ -145,7 +138,6 @@ a {
 }
 
 .page-main {
-  max-width: 1200px;
   margin-top: 70px;
 }
 .page-main__intro-advantages {
@@ -165,12 +157,14 @@ a {
   background-size: initial;
   background-position: top center;
   background-repeat: no-repeat;
-  width: 1200px;
   height: 679px;
 }
 .intro-triangle-1 {
   height: 57px;
   padding-top: 52px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
 }
 .intro-triangle-mobile {
   display: none;
@@ -215,7 +209,6 @@ a {
   grid-template-columns: repeat(3, 1fr);
   -moz-column-gap: 0;
        column-gap: 0;
-  width: 1200px;
   margin: 0 auto;
 }
 .compare_image {
@@ -369,7 +362,6 @@ a {
 }
 
 .search {
-  width: 1200px;
   height: 287px;
   margin-top: 57px;
   display: flex;
@@ -430,11 +422,9 @@ a {
 }
 
 .map {
-  width: 1200px;
   height: 350px;
 }
 .map-mobile {
-  max-width: 1200px;
   margin: 0 auto;
   display: flex;
   justify-content: center;
@@ -450,7 +440,6 @@ a {
 }
 
 .footer {
-  width: 1200px;
   height: 120px;
   display: flex;
   align-content: center;
