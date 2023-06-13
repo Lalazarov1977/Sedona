@@ -506,7 +506,7 @@ input[type=radio].visually-hidden {
   overflow: hidden;
 }
 
-@media screen and (max-width: 769px) {
+@media (max-width: 769px) {
   .page-header {
     width: 100%;
   }
@@ -528,7 +528,7 @@ input[type=radio].visually-hidden {
     width: 100%;
   }
 }
-@media screen and (max-width: 321px) {
+@media (max-width: 320px) {
   .page {
     width: 320px;
   }
